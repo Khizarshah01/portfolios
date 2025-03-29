@@ -1,14 +1,10 @@
 /* Hero Section */
 .hero {
-    padding-top: 80vh;
+    padding-top: 20vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    /* background-color: #1d1d1d; */
-    /* background: linear-gradient(135deg, #242424, #1e1e1e); */
     color: white;
     width: 100vh;
   }

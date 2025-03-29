@@ -10,15 +10,15 @@ const Home = () => {
     <div className='hero'>
       {/* Hero Section */}
       <h1>Hi, I am <span className="highlight">Khizar Shah!</span></h1>
-      <p>I am a second-year Computer Science student, mainly working in full-stack development. Currently exploring Web3, Blockchain, and contributing to open source.</p>
+      <p className='text-gray-400 text-xl'>I am a second-year Computer Science student, mainly working in full-stack development. Currently exploring Web3, Blockchain, and contributing to open source.</p>
 
       {/* About Me Section */}
       <h2>About Me</h2>
-      <p>I am passionate about building scalable web applications, experimenting with emerging technologies like Web3, and contributing to open-source projects. I enjoy solving problems through code and constantly learning new skills to improve my development workflow.</p>
+      <p className='text-gray-400 text-xl'>I am passionate about building scalable web applications, experimenting with emerging technologies like Web3, and contributing to open-source projects. I enjoy solving problems through code and constantly learning new skills to improve my development workflow.</p>
 
       {/* Experience Section */}
       <h2>Experience</h2>
-      <p>Currently no <span className='highlight-cut'>"official" experience</span>, but sharpening my skills while hunting for an internship.</p>
+      <p className='text-gray-400 text-xl'>Currently no <span className='highlight-cut'>"official" experience</span>, but sharpening my skills while hunting for an internship.</p>
 
       {/* Skills Section */}
       <h2>Skills</h2>
