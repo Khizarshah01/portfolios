@@ -1,16 +1,15 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Project from './components/Project'
-import Blogs from './components/Blogs'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Home from './components/Home'
+import Project from './components/Project/Project'
+import Blogs from './components/Blogs/Blogs'
+import Navbar from './components/Navbar/Navbar'
+import Landing from './components/Landing/Landing'
 function App() {
   const router = createBrowserRouter(
     [
       {
         path: '/',
-        element: <div><Navbar /><Home /></div>
+        element: <div><Navbar /><Landing /></div>
       },
       {
         path: '/project',
