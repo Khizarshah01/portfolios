@@ -1,23 +1,22 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Project from './components/Project/Project'
-import Blogs from './components/Blogs/Blogs'
-import Navbar from './components/Navbar/Navbar'
-import Landing from './components/Landing/Landing'
+import Blogs from './page/Blogs'
+import Main from './page/Main'
+import Projects from './page/Projects'
 function App() {
   const router = createBrowserRouter(
     [
       {
         path: '/',
-        element: <div><Navbar /><Landing /></div>
+        element: <><Main /></>
       },
       {
-        path: '/project',
-        element: <div><Navbar /><Project /></div>
+        path: '/projects',
+        element: <><Projects /></>
       },
       {
         path: '/blogs',
-        element: <div><Navbar /><Blogs /></div>
+        element: <><Blogs /></>
       },
     ]
   )

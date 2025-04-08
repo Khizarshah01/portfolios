@@ -1,17 +1,14 @@
 /* Navbar container */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 20px 40px;
     padding-bottom: 5px;
-    /* background-color: #1e1e1e; */
     color: rgb(0, 0, 0);
-    /* border-bottom: 2px solid #646cff; */
     z-index: 1000;
   }
   
@@ -34,6 +31,19 @@
     color: blue;
   }
   
+  /* Hide/Show scroll effect */
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+.navbar.show {
+  transform: translateY(0);
+}
+
   /* Mobile Menu */
   @media (max-width: 768px) {
     .nav-links {

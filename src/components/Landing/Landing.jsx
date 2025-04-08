@@ -10,6 +10,7 @@ import { socialsData } from '../../data/socialsData';
 import { FaLinkedin, FaGithub} from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 
+import Navbar from '../Navbar/Navbar';
 // Styled Components
 
 const ContactButton = styled(Button)(({ theme }) => ({
@@ -40,6 +41,7 @@ function Landing() {
 
     return (
         <div className='landing'>
+                <Navbar />
             <div className='landing--container'>
                 <div
                     className='landing--container-left'

@@ -1,0 +1,134 @@
+.education-section {
+    background: #111;
+    color: white;
+    padding: 60px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: rgb(172, 172, 172);
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1400px; /* was 1000px */
+    margin: auto; /* center it */
+    padding: 20px 0;
+  }
+  
+  
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: rgb(172, 172, 172);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-container {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-container.left {
+    left: 0;
+  }
+  
+  .timeline-container.right {
+    left: 50%;
+  }
+  
+  .content {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid gray;
+    position: relative;
+    /* box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); */
+  }
+  
+  .timeline-container.left .content {
+    margin-right: 40px;
+    text-align: right;
+  }
+  
+  .timeline-container.right .content {
+    margin-left: 40px;
+    text-align: left;
+    
+  }
+  
+  .timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    background-color: cyan;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-container.left::before {
+    right: -8px;
+  }
+  
+  .timeline-container.right::before {
+    left: -8px;
+  }
+  
+  .content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: rgb(234, 234, 234);
+  }
+  
+  .content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .content span {
+    font-size: 0.85rem;
+    color: gray;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-container {
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 25px;
+    }
+  
+    .timeline-container.right {
+      left: 0;
+    }
+  
+    .timeline-container.left .content,
+    .timeline-container.right .content {
+      margin: 0 0 30px 0;
+      text-align: left;
+      border-left: 5px solid gray;
+    }
+  
+    .timeline-container.left::before,
+    .timeline-container.right::before {
+      left: 12px;
+    }
+  }
+  
