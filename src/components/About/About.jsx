@@ -29,7 +29,7 @@ const About = () => {
     data-aos={isWide ? "fade-left" : "fade-up"}
   >
     <h3 className="about-heading">
-      <div className="bar"></div>About Me
+      ABOUT ME
     </h3>
     <h2 className="about-description">
           I am passionate about building scalable web applications, experimenting with emerging technologies like Web3, and contributing to open-source projects.

@@ -1,0 +1,76 @@
+/* .scontainer{
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.skill-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 80px;
+    color: rgb(104, 104, 104);
+  } */
+
+  /* Skill.css */
+  .uscontainer {
+    background-color: rgb(15, 15, 15);
+  }
+.scontainer {
+    padding: 80px 20px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .skill-heading {
+    font-size: 2.5rem;
+    color: rgb(104, 104, 104);
+    /* font-weight: bold; */
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-heading::before {
+    content: "";
+    width: 10px;
+    height: 28px;
+    background-color: #1e40af;
+    margin-right: 12px;
+    border-radius: 4px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+  }
+  
+  .skill-item {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+  }
+  
+  .skill-item:hover {
+    background-color: #2d2d2d;
+    color: white;
+    transform: translateY(-3px);
+    cursor: default;
+  }
+  
+  .skill-item span {
+    color: #1e40af;
+  }
+  

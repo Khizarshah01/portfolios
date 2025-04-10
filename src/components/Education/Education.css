@@ -1,15 +1,27 @@
 .education-section {
-    background: #111;
+    background: rgb(15, 15, 15);
     color: white;
     padding: 60px;
     font-family: "Poppins", sans-serif;
   }
   
   .section-heading {
-    text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: rgb(172, 172, 172);
+    color: rgb(104, 104, 104);
+    /* font-weight: bold; */
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-heading::before {
+    content: "";
+    width: 10px;
+    height: 28px;
+    background-color: #1e40af;
+    margin-right: 12px;
+    border-radius: 4px;
   }
   
   .timeline {
@@ -18,7 +30,7 @@
     margin: auto; /* center it */
     padding: 20px 0;
   }
-  
+
   
   .timeline::after {
     content: "";
@@ -68,10 +80,10 @@
   .timeline-container::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 60px;
     width: 16px;
     height: 16px;
-    background-color: cyan;
+    background-color: #1e40af;
     border-radius: 50%;
     z-index: 1;
   }
