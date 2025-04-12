@@ -1,12 +1,14 @@
 import React from 'react'
-import Project from '../components/Project/Project'
 import Navbar from '../components/Navbar/Navbar'
+import "../page/Projects.css"
 
 const Projects = () => {
   return (
     <>
     <Navbar />
-    <Project />
+    <div className="projectsN">
+      <div className="heading">Blogs Page not ready ;\</div>
+     </div>
     </>
   )
 }

@@ -42,10 +42,11 @@
   }
   
   .blog-card {
-    background: #292929;
+    background-color: #1B1B1B;
     border-radius: 10px;
     color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgb(49, 49, 49);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);  
     width: 70rem;
     transition: transform 0.3s;
     overflow: hidden;
@@ -53,9 +54,13 @@
   
   .blog-card:hover {
     transform: translateY(-5px);
+    border: 1px solid rgba(106, 106, 106, 0.519);
     /* box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px; */
   }
   @media screen and (max-width: 768px) {
+    .blog-heading {
+      font-size: 1.75rem;
+    }
     .blog-card {
       width: 100%;
     }
@@ -93,12 +98,23 @@
   }
   
   .more-blogs button {
-    background-color: #007bff;
-    color: white;
     padding: 10px 20px;
-    border: none;
+    font-size: 16px;
     font-weight: 600;
-    border-radius: 8px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
+  }
+  .more-blogs button:hover {
+    background-color: #1e40af;
+  }
+
+  .bts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   

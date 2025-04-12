@@ -2,13 +2,14 @@ import React from "react";
 import "../Project/Project.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import projects from "../../data/projectData"; 
-
+import { FaArrowCircleDown } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const Project = () => {
   return (
     <div className="pcontainer">
       <h2 className="project-heading">PROJECTS</h2>
       <div className="project-grid">
-        {projects.map((proj, index) => (
+        {projects.slice(0, 4).map((proj, index) => (
           <div className="project-card" key={index}>
             <img src={proj.image} alt={proj.title} className="project-img" />
             <h3>{proj.title}</h3>
@@ -29,7 +30,11 @@ const Project = () => {
         ))}
       </div>
       <div className="more-projects">
-        <button>More Projects</button>
+        <Link to="/projects">
+        <button className="bts">More Projects
+          <FaArrowCircleDown />
+        </button>
+        </Link>
       </div>
     </div>
   );

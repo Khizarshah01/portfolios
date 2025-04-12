@@ -34,25 +34,25 @@
   }
   
   .project-card {
-    background-color: #2d2d2d;
+    background-color: #1B1B1B;
     border-radius: 16px;
     padding: 20px;
     width: 300px;
     color: white;
     transition: 0.5s;
     text-align: left;
+    border: 1px solid rgb(49, 49, 49);
   }
   
   .project-card:hover {
     transform: translateY(-3px);
-    background-color: rgb(232, 232, 232);
-    color: black;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-    
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);  
   }
 
   .project-card:hover p{
-    color: #494e52;
+    color: #333333;
   }
   
   .project-img {
@@ -100,11 +100,14 @@
   
   .more-projects {
     margin-top: 30px;
+    display: flex;
+  justify-content: center;
   }
   
   .more-projects button {
     padding: 10px 20px;
     font-size: 16px;
+    font-weight: 600;
     background-color: #1d4ed8;
     color: white;
     border: none;
@@ -117,3 +120,9 @@
     background-color: #1e40af;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .project-heading {
+      font-size: 1.75rem;
+    }
+  }

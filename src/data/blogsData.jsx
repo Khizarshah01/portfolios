@@ -1,22 +1,16 @@
 const blogs = [
-    {
-      title: "Getting Started with React",
-      description: "A beginner's guide to building your first React app with hooks and components.",
-      image: "https://via.placeholder.com/300x180.png?text=React+Blog",
-      link: "https://your-blog-link.com/react-intro",
-    },
-    {
-      title: "Mastering Git & GitHub",
-      description: "Understand how Git works and how to contribute to open-source using GitHub.",
-      image: "https://via.placeholder.com/300x180.png?text=Git+Blog",
-      link: "https://your-blog-link.com/git-guide",
-    },
-    {
-      title: "Spring Boot for Java Developers",
-      description: "Explore how to build powerful backends using Spring Boot and REST APIs.",
-      image: "https://via.placeholder.com/300x180.png?text=Spring+Boot+Blog",
-      link: "https://your-blog-link.com/spring-boot",
-    },
+  {
+    title: "How Do Transactions Work on a Blockchain?",
+    description: "Beginner-friendly explanation of how blockchain transactions are created, signed, and broadcast across the network.",
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*oJ3P_9CtHK5i2PLhQRSz_w.png", // Or a relevant blockchain image
+    link: "https://medium.com/@khizarshah01/how-do-transactions-work-on-a-blockchain-explained-for-beginners-e7407742df6c",
+  },
+  {
+    title: "Kadane's Algorithm - Maximum Subarray Sum Made Easy",
+    description: "A step-by-step guide to understanding and implementing Kadane’s Algorithm, with visual intuition and Java code.",
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*ZP8KtBZz09ZyD1cmf3rcmw.png", // Optional image
+    link: "https://medium.com/@khizarshah01/kadanes-algorithm-maximum-subarray-sum-made-easy-35980a30c16e",
+  },  
   ];
   
   export default blogs;

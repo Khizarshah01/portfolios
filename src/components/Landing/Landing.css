@@ -204,7 +204,7 @@
     }
     .lcr--content {
       width: 60%;
-      margin-top: 10%;
+      margin-top: 31%;
       margin-right: 6%;
     }
   
@@ -252,23 +252,24 @@
       padding: 0 2rem;
     }
     .lcr--content {
-      margin-top: 20%;
+      margin-top: 31% !important;
       margin-right: initial;
       width: 100%;
     }
     .lcr--content h6 {
-      font-size: 1rem;
+      font-size: 1rem !important;
       text-align: center;
     }
     .lcr--content h1 {
-      font-size: 2.5rem;
+      font-size: 2.5rem !important;
       text-align: center;
     }
     .lcr--content p {
-      font-size: 0.95rem;
+      font-size: 0.95rem !important;
       text-align: center;
       margin: 0 auto;
       width: 90%;
+      margin-bottom: 2rem;
     }
     .lcr-buttonContainer {
       margin: 0 auto;
@@ -277,7 +278,7 @@
       justify-content: center;
     }
     .lcr-buttonContainer button {
-      margin-top: -20%;
+      margin-top: 10%;
     }
   }
   

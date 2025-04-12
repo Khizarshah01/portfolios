@@ -10,6 +10,8 @@ import {
   faLinux,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { FaPython } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa6";
 import { InlineIcon } from "@iconify/react";
 import mongodbIcon from "@iconify/icons-cib/mongodb";
 import mysqlIcon from "@iconify/icons-cib/mysql";
@@ -24,8 +26,8 @@ const Skill = () => {
     <div className="scontainer">
     <h3 className="skill-heading">MY SKILLS</h3>
     <div className="skills-grid">
-      <p className="skill-item"><span>○</span> <InlineIcon icon={javaIcon} /> Java</p>
-      <p className="skill-item"><span>○</span> <InlineIcon icon={pythonIcon} /> Python</p>
+      <p className="skill-item"><span>○</span> <FaJava /> Java</p>
+      <p className="skill-item"><span>○</span> <FaPython /> Python</p>
       <p className="skill-item"><span>○</span> <FontAwesomeIcon icon={faReact} /> React</p>
       <p className="skill-item"><span>○</span> <InlineIcon icon={mongodbIcon} /> MongoDB</p>
       <p className="skill-item"><span>○</span> <InlineIcon icon={mysqlIcon} /> MySQL</p>

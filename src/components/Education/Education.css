@@ -144,3 +144,36 @@
     }
   }
   
+  @media (max-width: 640px) {
+    .education-section {
+      padding: 2rem 1rem;
+    }
+  
+    .section-heading {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .timeline-container::before {
+      top: 30px;
+    }
+  
+    .content {
+      padding: 1rem;
+    }
+  
+    .content h3 {
+      font-size: 1rem;
+    }
+  
+    .content p {
+      font-size: 0.85rem;
+      color:white;
+    }
+  
+    .content span {
+      font-size: 0.75rem;
+    }
+  }
+  
