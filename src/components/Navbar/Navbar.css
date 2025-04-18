@@ -94,7 +94,7 @@
     display: none;
   }
   .theme-toggle {
-    background-color: var(--background-color0);
-    color:  var(--background-color);
+    background-color: var(--background-color);
+    color:  var(--background-color0);
   }
 }

@@ -6,9 +6,7 @@ const Navbar = () => {
   const [show, setShow] = useState(true);
   const [top, setTop] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("darkMode") === "true"
-  );
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", darkMode ?  "light" : "dark" );
