@@ -8,23 +8,6 @@
 
   /* Light Theme (Default) */
 :root {
-  --background-trans: #1B1B1B;
-  --background-color0: rgb(15, 15, 15);
-  --background-color: #ececff;
-  --backgroundSection: linear-gradient(to right, #e3f2fd, #bbdefb);
-  --text-color: #ececff;
-  --htext-color: #34495e;
-  --nav-background: #f8f9fa;
-  --nav-text: rgb(104, 104, 104);
-  --b-text-color: #808080;
-  --button-background: #1e40af;
-  --button-text: #fff;
-  --hover-background: rgba(0, 123, 255, 0.1);
-  --hover-text: #1d4ed8;
-}
-
-/* Dark Theme */
-[data-theme="light"] {
   --background-trans: #d7d7d7d6;
   --background-color0: #ececff;
   --background-color: rgb(15, 15, 15);
@@ -38,4 +21,22 @@
   --button-text: #000000;
   --hover-background: rgba(0, 123, 255, 0.1);
   --hover-text: #48a1ff;
+}
+
+
+[data-theme="light"] {
+  --background-trans: #1B1B1B;
+  --background-color0: rgb(15, 15, 15);
+  --background-color: #ececff;
+  --backgroundSection: linear-gradient(to right, #e3f2fd, #bbdefb);
+  --text-color: #ececff;
+  --htext-color: #34495e;
+  --nav-background: #f8f9fa;
+  --nav-text: rgb(104, 104, 104);
+  --b-text-color: #808080;
+  --button-background: #1e40af;
+  --button-text: #fff;
+  --hover-background: rgba(0, 123, 255, 0.1);
+  --hover-text: #1d4ed8;
+
 }
