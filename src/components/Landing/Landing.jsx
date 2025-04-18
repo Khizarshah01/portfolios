@@ -11,41 +11,14 @@ import { FaLinkedin, FaGithub} from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 
 import Navbar from '../Navbar/Navbar';
-// Styled Components
-
-const ContactButton = styled(Button)(({ theme }) => ({
-    backgroundColor: theme.primary,
-    color: theme.secondary,
-    borderRadius: '30px',
-    textTransform: 'inherit',
-    textDecoration: 'none',
-    width: '150px',
-    height: '50px',
-    fontSize: '1rem',
-    fontWeight: 500,
-    fontFamily: 'var(--primaryFont)',
-    border: `3px solid ${theme.primary}`,
-    transition: '100ms ease-out',
-    '&:hover': {
-        backgroundColor: theme.secondary,
-        color: theme.tertiary,
-        border: `3px solid ${theme.tertiary}`,
-    },
-    '@media (max-width: 600px)': {
-        display: 'none',
-    },
-}));
 
 function Landing() {
-    const { theme, drawerOpen } = useContext(ThemeContext);
-
     return (
         <div className='landing'>
                 <Navbar />
             <div className='landing--container'>
                 <div
                     className='landing--container-left'
-                    style={{ backgroundColor: theme.primary }}
                 >
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
@@ -56,7 +29,6 @@ function Landing() {
                             >
                                 <FaLinkedin
                                     className='landing--social'
-                                    style={{ color: theme.secondary }}
                                     aria-label='LinkedIn'
                                 />
                             </a>
@@ -69,7 +41,6 @@ function Landing() {
                             >
                                 <FaGithub
                                     className='landing--social'
-                                    style={{ color: theme.secondary }}
                                     aria-label='GitHub'
                                 />
                             </a>
@@ -82,7 +53,6 @@ function Landing() {
                             >
                                 <FaXTwitter
                                     className='landing--social'
-                                    style={{ color: theme.secondary }}
                                     aria-label='Twitter'
                                 />
                             </a>
@@ -94,19 +64,13 @@ function Landing() {
                     src={headerData.image}
                     alt=''
                     className='landing--img'
-                    style={{
-                        opacity: drawerOpen ? '0' : '1',
-                        borderColor: theme.secondary,
-                    }}
                 />
 
                 <div
                     className='landing--container-right'
-                    style={{ backgroundColor: theme.secondary }}
                 >
                     <div
                         className='lcr--content'
-                        style={{ color: theme.tertiary }}
                     >
                         <div className='landtitle'>
                         <h6>{headerData.title}</h6>

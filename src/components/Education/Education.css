@@ -1,13 +1,13 @@
 .education-section {
-    background: rgb(15, 15, 15);
-    color: white;
+    background: var(--background-color0);
+    color: var(--background-color);
     padding: 60px;
     font-family: "Poppins", sans-serif;
   }
   
   .section-heading {
     font-size: 2.5rem;
-    color: rgb(104, 104, 104);
+    color: var(--nav-text);
     /* font-weight: bold; */
     margin-bottom: 60px;
     display: flex;
@@ -19,7 +19,7 @@
     content: "";
     width: 10px;
     height: 28px;
-    background-color: #1e40af;
+    background-color: var(--button-background);
     margin-right: 12px;
     border-radius: 4px;
   }
@@ -36,7 +36,7 @@
     content: "";
     position: absolute;
     width: 4px;
-    background-color: rgb(172, 172, 172);
+    background-color: var(--nav-text);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -58,7 +58,7 @@
   }
   
   .content {
-    background-color: #1e1e1e;
+    background-color: var(--background-trans);
     padding: 30px;
     border-radius: 8px;
     border-left: 5px solid gray;
@@ -83,7 +83,7 @@
     top: 60px;
     width: 16px;
     height: 16px;
-    background-color: #1e40af;
+    background-color: var(--button-background);
     border-radius: 50%;
     z-index: 1;
   }
@@ -99,18 +99,18 @@
   .content h3 {
     margin: 0;
     font-size: 1.4rem;
-    color: rgb(234, 234, 234);
+    color: var(--text-color);
   }
   
   .content p {
     margin: 5px 0;
     font-size: 1rem;
-    color: white;
+    color: var(--nav-background);
   }
   
   .content span {
     font-size: 0.85rem;
-    color: gray;
+    color: var(--b-text-color);
     display: block;
     margin-top: 5px;
   }
@@ -169,7 +169,7 @@
   
     .content p {
       font-size: 0.85rem;
-      color:white;
+      color: var(--text-color);
     }
   
     .content span {

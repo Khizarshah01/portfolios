@@ -3,13 +3,13 @@
 .pcontainer {
     text-align: center;
     padding: 50px 20px;
-    background-color: rgb(15, 15, 15);
+    background-color: var(--background-color0);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
   
   .project-heading {
     font-size: 2.5rem;
-    color: rgb(104, 104, 104);
+    color: var(--nav-text);
     /* font-weight: bold; */
     margin-bottom: 60px;
     display: flex;
@@ -34,11 +34,11 @@
   }
   
   .project-card {
-    background-color: #1B1B1B;
+    background-color: var(--background-trans);
     border-radius: 16px;
     padding: 20px;
     width: 300px;
-    color: white;
+    color: var(--text-color);
     transition: 0.5s;
     text-align: left;
     border: 1px solid rgb(49, 49, 49);
@@ -46,13 +46,13 @@
   
   .project-card:hover {
     transform: translateY(-3px);
-    background-color: rgb(240, 240, 240);
-    color: rgb(0, 0, 0);
+    background-color: var(--background-color);
+    color: var(--background-color0);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);  
   }
 
   .project-card:hover p{
-    color: #333333;
+    color: var(--background-trans);
   }
   
   .project-img {
@@ -70,7 +70,7 @@
   
   .project-card p {
     font-size: 14px;
-    color: #ababab;
+    color: var(--nav-text);
     margin-bottom: 15px;
     min-height: 50px;
   }
@@ -85,7 +85,7 @@
     height: 38px;
     border-radius: 50%;
     background-color: #1d4ed8;
-    color: white;
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #1d4ed8;
+    background-color: var(--hover-text);
     color: white;
     border: none;
     border-radius: 10px;
@@ -117,7 +117,7 @@
   }
   
   .more-projects button:hover {
-    background-color: #1e40af;
+    background-color: var(--button-background);
   }
   
 

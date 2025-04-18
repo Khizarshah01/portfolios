@@ -11,8 +11,10 @@ import { FaGithubAlt } from "react-icons/fa6";
 import contactBlack from "../../assets/pics/contactsBlack.svg";
 import { BsSend } from "react-icons/bs";
 
+
+
+
 function Contacts() {
-  const { theme } = useContext(ThemeContext);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState('');
@@ -36,12 +38,14 @@ function Contacts() {
     }
 
     try {
-      await axios.post(contactsData.sheetAPI, form);
+      await axios.post(`${import.meta.env.VITE_API_URL_SHEET_API_URL}`, form);
       setSuccess(true);
       setErrMsg('');
       setForm({ name: '', email: '', message: '' });
-    } catch {
+    } catch(error){
+      console.error(error);
       setErrMsg('Something went wrong. Try again later.');
+      console.log(process.env.REACT_APP_SHEET_API_URL);
     }
   };
 
@@ -121,7 +125,7 @@ function Contacts() {
 
       <div className="footer">
   <div >
-    <a href="https://github.com/khizar-shah/your-repo" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/Khizarshah01/portfolios" target="_blank" rel="noopener noreferrer">
     <div className="source">
       <FaGithubAlt /> Source
     </div>

@@ -19,9 +19,9 @@ const About = () => {
   return (
     <div id="about" className="about-container">
   <div className="line-styling">
-    <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>
-    <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>
-    <div className="style-line" style={{ backgroundColor: theme.primary }}></div>
+    <div className="style-circle" ></div>
+    <div className="style-circle" ></div>
+    <div className="style-line" ></div>
   </div>
 
   <motion.div

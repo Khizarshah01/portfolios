@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 2rem 1rem 5rem 1rem;
-  background-color: rgb(15, 15, 15);
+  background-color: var(--background-color0);
   padding-top: 100px;
   overflow: hidden;
 }
@@ -27,12 +27,14 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  background-color: var(--background-color);
 }
 
 .style-line {
   width: 95%;
   height: 5px;
   border-radius: 10px;
+  background-color: var(--background-color);
 }
 
 .about-text {
@@ -48,17 +50,17 @@
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: 500;
   font-family: Poppins, sans-serif;
-  color: rgb(104, 104, 104);
+  color: var(--nav-text);
 }
 
 .about-heading::before {
   content: "";
   width: 10px;
   height: 28px;
-  background-color: #1e40af;
+  background-color: var(--button-background);
   margin-right: 12px;
   border-radius: 4px;
 }
@@ -66,13 +68,13 @@
 .bar {
   width: 20px;
   height: 4px;
-  background-color: rgb(172, 172, 172);
+  background-color: var(--button-background0);
   margin-right: 0.75rem;
 }
 
 .about-description {
   font-size: 1rem;
-  color: rgb(234, 234, 234);
+  color: var(--text-color);
   text-align: left;
   line-height: 1.6;
 }
@@ -90,7 +92,7 @@
 .separator {
   width: 80px;
   height: 4px;
-  background-color: #000;
+  background-color: var(--background-color0);
 }
 
 .about-image {
@@ -102,13 +104,19 @@
 }
 
 /* Mobile First Adjustments */
-@media (min-width: 600px) {
+@media (max-width: 640px) {
   .about-description {
     font-size: 1.05rem;
   }
 
   .about-image {
     max-width: 450px;
+  }
+  
+  .about-heading {
+    font-size: 1.75rem !important;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 }
 
@@ -124,6 +132,12 @@
   .about-image {
     max-width: 600px;
   }
+
+  .about-heading {
+    font-size: 1.75rem !important;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -133,5 +147,11 @@
 
   .about-image {
     max-width: 700px;
+  }
+
+  .about-heading {
+    font-size: 1.75rem !important;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 }

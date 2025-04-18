@@ -33,6 +33,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    background-color: var(--background-color);
   }
   
   .lcl--content {
@@ -41,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    color: var(--background-color0);
   }
   
   .landing--social {
@@ -68,7 +70,7 @@
   .landing--container-right {
     flex: 65%;
     height: 100%;
-    background-color: #eaeaea;
+    background-color: var(--background-color0);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -80,6 +82,7 @@
     margin-right: 7rem;
     font-family: var(--primaryFont);
     font-style: normal;
+    color: var(--text-color);
   }
   
   .lcr--content h6 {
@@ -144,8 +147,8 @@
     }
   }
   .resumeBtn{
-    color: white;
-    background-color: #1e1e1e;
+    color: var(--button-text);
+    background-color: var(--background-color0);
     border-radius: 30px;
     text-transform: inherit;
     text-decoration: none;
@@ -154,24 +157,23 @@
     font-size: 1.2rem;
     font-weight: 500;
     font-family: var(--primaryFont);
-    border: 3px solid #1e1e1e;
     transition: 100ms ease-out;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid white;
+    border: 3px solid var(--background-color);
   }
 
   .resumeBtn:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--background-color0);
     /* border: 3px solid black; */
 }
 
   .contactBtn{
-    background-color: white;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--background-color0);
     border-radius: 30px;
     text-transform: inherit;
     text-decoration: none;
@@ -186,12 +188,12 @@
     display: flex;
     align-items: center;
     justify-content: center;    
-    border: 3px solid white;
+    border: 3px solid var(--background-color);
   }
 
   .contactBtn:hover {
-    background-color: #1e1e1e;
-    color: white;
+    background-color: var(--background-color0);
+    color: var(--background-color);
     /* border: 3px solid #1e1e1e; */
 }
   @media (max-width: 900px) {
@@ -229,7 +231,7 @@
       --img-size: 200px;
       left: 50%;
       top: 30%;
-      border: 8px solid #eaeaea;
+      border: 8px solid var(--background-color0);
       transform: translate(-50%, -50%);
     }
     .landing--container-left {
@@ -246,13 +248,13 @@
       flex: initial;
       height: 70%;
       width: 100%;
-      background-color: #eaeaea;
+      background-color: var(--background-color0);
       align-items: center;
       justify-content: center;
       padding: 0 2rem;
     }
     .lcr--content {
-      margin-top: 31% !important;
+      margin-top: 20% !important;
       margin-right: initial;
       width: 100%;
     }

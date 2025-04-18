@@ -1,18 +1,18 @@
   .uscontainer {
-    background-color: rgb(15, 15, 15);
+    background-color: var(--background-color0);
   }
 .scontainer {
     padding: 80px 20px;
-    background-color: rgb(15, 15, 15);
+    background-color: var(--background-color0);
     border-radius: 16px;
     max-width: 1000px;
     margin: 0px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
   }
   
   .skill-heading {
     font-size: 2.5rem;
-    color: rgb(104, 104, 104);
+    color: var(--nav-text);
     /* font-weight: bold; */
     margin-bottom: 60px;
     display: flex;
@@ -36,12 +36,12 @@
   }
   
   .skill-item {
-    background-color: #ffffff;
+    background-color: var(--background-trans);
     padding: 12px 16px;
     border-radius: 12px;
     font-size: 18px;
     font-weight: 500;
-    color: #333333;
+    color: var(--text-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
@@ -50,8 +50,8 @@
   }
   
   .skill-item:hover {
-    background-color: #2d2d2d;
-    color: white;
+    background-color: var(--backgroundSection);
+    color: var(--text-color);
     /* border: 1px solid rgba(106, 106, 106, 0.519); */
     transform: translateY(-3px);
     cursor: default;
