@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Web3 Wallet",
-    description: "Developing a secure and minimal multi-chain Web3 wallet focused on learning core blockchain concepts like BIP39 mnemonic generation, private/public key management, transaction signing, and Alchemy API integration.",
+    description: "A simple, client-side multi-chain Web3 wallet built to explore blockchain fundamentals. Supports Ethereum (Sepolia) and Solana (Devnet) with key management, encrypted storage, and transactions via Alchemy RPC. ",
     image: web3walletImg,
     github: "https://github.com/Khizarshah01/web3-wallet",
     live: "",
