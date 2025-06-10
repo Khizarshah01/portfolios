@@ -11,7 +11,7 @@
   --background-trans: #d7d7d7d6;
   --background-color0: #ececff;
   --background-color: rgb(15, 15, 15);
-  --backgroundSection: linear-gradient(to right, #3a3e40, #2d3842);
+  --backgroundSection: rgba(255, 255, 255, 0.433);
   --text-color: #0c0c0c;
   --htext-color: #78abde;
   --nav-background: #333;

@@ -4,7 +4,6 @@
     text-align: center;
     padding: 50px 20px;
     background-color: var(--background-color0);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
   
   .project-heading {
@@ -34,7 +33,7 @@
   }
   
   .project-card {
-    background-color: var(--background-trans);
+    background-color: var(--backgroundSection);
     border-radius: 16px;
     padding: 20px;
     width: 300px;
